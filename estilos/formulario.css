@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+div#inicio{
+    margin-bottom: 20px;
+}
+input#cat{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div#button{
+    margin-top: 10px;
+}
