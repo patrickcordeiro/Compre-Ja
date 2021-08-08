@@ -7,11 +7,18 @@ function cadastrarProduto(){
 
    
     var input = document.querySelector('#prod'); //produto digitado pelo usuário
+    
     var produto = []
-    produto.push = (input.value); //transforma a string em utilizavel para o código
+    
+    produto [produto.length] = (input.value); //transforma a string em utilizavel para o código
     console.log(produto)
     var listaProduto = document.createElement("li");
-    var produtoAtual = produto.pop()
+    if(produto.length === 0){
+        var produtoAtual = produto[0]
+    }else{
+        var produtoAtual = (produto[produto.length - 1])
+        
+    }
     listaProduto.innerHTML = produtoAtual
     
     listaAtual = document.getElementsByTagName("ul")[0]
@@ -19,7 +26,8 @@ function cadastrarProduto(){
     var itens = document.getElementsByTagName("li")
 
     listaAtual.insertBefore(listaProduto, itens[0])
-
+    
+    
 
     // var prod1 = document.querySelectorAll('#prod1')[0]; //seleciona lista
     // var prod2 = document.querySelector('#prod2');
