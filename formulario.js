@@ -13,7 +13,10 @@ function cadastrarProduto(){
     produto [produto.length] = (input.value); //transforma a string em utilizavel para o código
     console.log(produto)
     var listaProduto = document.createElement("li");
-    if(produto.length === 0){
+    if(produto == ""){
+        alert("Não se esqueça de digitar o produto desejado!")
+        return
+    } else if(produto.length === 0){
         var produtoAtual = produto[0]
     }else{
         var produtoAtual = (produto[produto.length - 1])
